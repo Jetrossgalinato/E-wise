@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import OuterLayout from "@/layouts/outer-layout";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <OuterLayout>{children}</OuterLayout>
         </ThemeProvider>
       </body>
     </html>
