@@ -10,7 +10,7 @@ export function TypographyH1({ children }: { children: React.ReactNode }) {
 
 export function TypographyH2({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="scroll-m-20 border-b pb-2 text-2xl md:text-3xl font-semibold tracking-tight first:mt-0">
+    <h2 className="scroll-m-20 border-b pb-2 text-2xl md:text-5xl font-semibold tracking-tight first:mt-0">
       {children}
     </h2>
   );
@@ -67,7 +67,7 @@ export function TypographyLead({ children }: { children: React.ReactNode }) {
 }
 
 export function TypographyLarge({ children }: { children: React.ReactNode }) {
-  return <div className="text-lg font-semibold">{children}</div>;
+  return <div className="text-xl font-semibold">{children}</div>;
 }
 
 export function TypographySmall({

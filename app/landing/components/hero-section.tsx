@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative w-full bg-background overflow-hidden pt-24 pb-16 md:pt-32 md:pb-24 transition-colors duration-300">
+    <section className="relative w-full bg-background overflow-hidden pt-16 pb-12 md:pt-24 md:pb-16 transition-colors duration-300">
       {/* Subtle background glow */}
       <div className="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full overflow-hidden -z-10 pointer-events-none">
         <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-r from-primary/20 to-accent/20 blur-3xl rounded-full opacity-70"></div>
@@ -16,12 +16,10 @@ const HeroSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Main Headline */}
-        {/* Added mb-8 instead of mb-6 to give the title more breathing room */}
-        <div className="mb-8">
+        <div className="mb-6">
           <TypographyH1>
             Smart e-waste.
             <br />
-            {/* Added pb-1 so letters with descenders (like 'g' or 'y') in the gradient don't get clipped */}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent pb-1 inline-block">
               Circular by design.
             </span>
@@ -29,8 +27,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Sub-headline */}
-        {/* Narrowed the max-width slightly from max-w-2xl to max-w-[42rem] for better typographic line-lengths on desktop */}
-        <div className="max-w-[42rem] mb-10">
+        <div className="max-w-[42rem] mb-8">
           <TypographyLead>
             Turn your broken phones, dead laptops, and old TVs into value while
             saving Butuan City from toxic waste.
@@ -38,8 +35,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Call to Action Buttons */}
-        {/* Restored custom sizing to the buttons to balance out the large headline */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16 w-full">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12 w-full">
           {/* Primary Button */}
           <Button
             variant="default"
@@ -74,7 +70,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Image / Mockup Placeholder */}
-        <div className="relative w-full max-w-4xl mt-6 rounded-2xl md:rounded-[2rem] overflow-hidden shadow-2xl shadow-foreground/5 border border-border bg-card aspect-video flex items-center justify-center transition-colors duration-300">
+        <div className="relative w-full max-w-4xl mt-4 rounded-2xl md:rounded-[2rem] overflow-hidden shadow-2xl shadow-foreground/5 border border-border bg-card aspect-video flex items-center justify-center transition-colors duration-300">
           <div className="flex flex-col items-center gap-2">
             <svg
               className="w-8 h-8 opacity-50 text-muted-foreground"
