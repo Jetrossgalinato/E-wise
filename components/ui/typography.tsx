@@ -67,7 +67,7 @@ export function TypographyLead({ children }: { children: React.ReactNode }) {
 }
 
 export function TypographyLarge({ children }: { children: React.ReactNode }) {
-  return <div className="text-lg font-semibold">{children}</div>;
+  return <div className="text-xl font-semibold">{children}</div>;
 }
 
 export function TypographySmall({
