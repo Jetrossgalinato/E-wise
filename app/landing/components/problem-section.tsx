@@ -10,10 +10,10 @@ import {
 
 const ProblemSection: React.FC = () => {
   return (
-    <section className="w-full py-20 md:py-32 bg-secondary/30 border-y border-border transition-colors duration-300">
+    <section className="w-full py-16 md:py-20 bg-secondary/30 border-y border-border transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16 md:mb-24 [&_h2]:border-none [&_h2]:pb-0">
+        <div className="max-w-2xl mx-auto text-center mb-12 md:mb-16 [&_h2]:border-none [&_h2]:pb-0">
           <TypographyH2>The Silent Crisis</TypographyH2>
           <div className="mt-4">
             <TypographyLead>
@@ -25,7 +25,7 @@ const ProblemSection: React.FC = () => {
         </div>
 
         {/* Statistics Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:mb-16">
           {/* Stat Card 1 */}
           <div className="flex flex-col items-center text-center p-8 lg:p-10 rounded-[2rem] bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-300 h-full">
             <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 text-primary">
@@ -79,7 +79,7 @@ const ProblemSection: React.FC = () => {
         </div>
 
         {/* Closing Thought / Pivot to Solution */}
-        <div className="max-w-2xl mx-auto pt-10 border-t border-border/50 flex justify-center text-center">
+        <div className="max-w-2xl mx-auto pt-8 border-t border-border/50 flex justify-center text-center">
           <TypographyP>
             We knew there had to be a better way. Instead of giving your items
             away for a tiny fraction of their worth, or letting them disappear
