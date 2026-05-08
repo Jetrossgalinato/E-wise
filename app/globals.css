@@ -50,19 +50,22 @@
 
 :root {
   --background: oklch(0.97 0 0);
-  --foreground: oklch(0.2 0 0);
+  /* Softer typography for light mode (not pure black) */
+  --foreground: oklch(16% 0 0);
   --card: oklch(0.99 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(14.5% 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  --popover-foreground: oklch(14.5% 0 0);
+  /* Primary accent (light-mode suite shade of provided dark-mode accent 1) */
+  --primary: oklch(55.92% 0.092 162.49);
+  --primary-foreground: oklch(98% 0 0);
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary-foreground: oklch(16% 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --muted-foreground: oklch(55.6% 0 0);
+  /* Secondary accent (light-mode suite shade of provided dark-mode accent 2) */
+  --accent: oklch(88.09% 0.181 94.02);
+  --accent-foreground: oklch(9% 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
@@ -85,19 +88,24 @@
 
 .dark {
   --background: oklch(0.14 0 0);
-  --foreground: oklch(0.97 0 0);
+  /* Softer typography for dark mode (not pure white) */
+  --foreground: oklch(95% 0 0);
   --card: oklch(0.2 0 0);
-  --card-foreground: oklch(0.985 0 0);
+  --card-foreground: oklch(98.5% 0 0);
   --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
+  --popover-foreground: oklch(98.5% 0 0);
+  /* Use the user-provided dark-mode accents */
+  --primary: oklch(84.83% 0.094 140.69);
+  --primary-foreground: oklch(12% 0 0);
   --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
+  --secondary-foreground: oklch(98.5% 0 0);
   --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --muted-foreground: oklch(70.8% 0 0);
+  --accent: oklch(94.91% 0.117 100.98);
+  --accent-foreground: oklch(8% 0 0);
+  /* Map sidebar primary to primary for consistent accents */
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
