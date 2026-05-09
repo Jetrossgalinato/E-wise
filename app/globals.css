@@ -10,6 +10,14 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
+
+  /* --- New Custom Icon Colors --- */
+  --color-icon-emerald: var(--icon-emerald);
+  --color-icon-amber: var(--icon-amber);
+  --color-icon-blue: var(--icon-blue);
+  --color-icon-purple: var(--icon-purple);
+  --color-icon-rose: var(--icon-rose);
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -50,26 +58,31 @@
 
 :root {
   --background: oklch(0.97 0 0);
-  /* Softer typography for light mode (not pure black) */
   --foreground: oklch(16% 0 0);
   --card: oklch(0.99 0 0);
   --card-foreground: oklch(14.5% 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(14.5% 0 0);
-  /* Primary accent (light-mode suite shade of provided dark-mode accent 1) */
   --primary: oklch(55.92% 0.092 162.49);
   --primary-foreground: oklch(98% 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(16% 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(55.6% 0 0);
-  /* Secondary accent (light-mode suite shade of provided dark-mode accent 2) */
-  --accent: oklch(88.09% 0.181 94.02);
+  --accent: oklch(83% 0.181 94.02);
   --accent-foreground: oklch(9% 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+
+  /* --- Light Mode Icon Colors --- */
+  --icon-emerald: oklch(0.627 0.194 149.214); /* Trust, Verified, Eco */
+  --icon-amber: oklch(0.769 0.188 70.08); /* Repair, Tools, Warning */
+  --icon-blue: oklch(0.641 0.165 250); /* Tech, Tracking, Data */
+  --icon-purple: oklch(0.62 0.18 300); /* AI, Magic, Compute */
+  --icon-rose: oklch(0.65 0.18 15); /* Community, Alert, Love */
+
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -88,13 +101,11 @@
 
 .dark {
   --background: oklch(0.14 0 0);
-  /* Softer typography for dark mode (not pure white) */
   --foreground: oklch(95% 0 0);
   --card: oklch(0.2 0 0);
   --card-foreground: oklch(98.5% 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(98.5% 0 0);
-  /* Use the user-provided dark-mode accents */
   --primary: oklch(84.83% 0.094 140.69);
   --primary-foreground: oklch(12% 0 0);
   --secondary: oklch(0.269 0 0);
@@ -103,13 +114,20 @@
   --muted-foreground: oklch(70.8% 0 0);
   --accent: oklch(94.91% 0.117 100.98);
   --accent-foreground: oklch(8% 0 0);
-  /* Map sidebar primary to primary for consistent accents */
   --sidebar-primary: var(--primary);
   --sidebar-primary-foreground: var(--primary-foreground);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
+
+  /* --- Dark Mode Icon Colors (Slightly lighter/luminous) --- */
+  --icon-emerald: oklch(0.723 0.165 149.601);
+  --icon-amber: oklch(0.828 0.161 74.453);
+  --icon-blue: oklch(0.75 0.15 250);
+  --icon-purple: oklch(0.75 0.15 300);
+  --icon-rose: oklch(0.75 0.15 15);
+
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
