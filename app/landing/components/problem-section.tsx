@@ -62,7 +62,7 @@ const ProblemSection: React.FC = () => {
 
           {/* Stat Card 3 */}
           <div className="flex flex-col items-center text-center p-8 lg:p-10 rounded-[2rem] bg-card text-card-foreground shadow-sm hover:shadow-md border border-transparent dark:border-white/10 dark:hover:border-white/20 transition-all duration-300 h-full">
-            <div className="h-14 w-14 rounded-full bg-accent/20 flex items-center justify-center mb-6 text-accent-foreground">
+            <div className="h-14 w-14 rounded-full bg-accent/20 flex items-center justify-center mb-6 text-accent">
               <Building2 className="w-7 h-7" />
             </div>
             <span className="text-4xl lg:text-5xl font-extrabold tracking-tight mb-3 text-foreground">

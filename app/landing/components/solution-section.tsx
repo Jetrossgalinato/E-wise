@@ -26,9 +26,9 @@ const SolutionSection: React.FC = () => {
 
         {/* Bento Box Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
-          {/* Feature 1: AI Value Estimator (Keeps Primary Green) */}
+          {/* Feature 1: AI Value Estimator (Uses Custom Purple) */}
           <ShineCard className="md:col-span-2 bg-card">
-            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 text-primary">
+            <div className="h-12 w-12 rounded-full bg-icon-purple/10 flex items-center justify-center mb-6 text-icon-purple">
               <Camera className="w-6 h-6" />
             </div>
             <TypographyH3>AI Value Estimator</TypographyH3>
@@ -41,9 +41,9 @@ const SolutionSection: React.FC = () => {
             </div>
           </ShineCard>
 
-          {/* Feature 2: AI Material Classifier (Keeps Accent Yellow) */}
+          {/* Feature 2: AI Material Classifier (Uses Custom Rose) */}
           <ShineCard className="bg-card">
-            <div className="h-12 w-12 rounded-full bg-accent/20 flex items-center justify-center mb-6 text-accent">
+            <div className="h-12 w-12 rounded-full bg-icon-rose/10 flex items-center justify-center mb-6 text-icon-rose">
               <Cpu className="w-6 h-6" />
             </div>
             <TypographyH3>Material Classifier</TypographyH3>
@@ -56,9 +56,9 @@ const SolutionSection: React.FC = () => {
             </div>
           </ShineCard>
 
-          {/* Feature 3: Verified Collectors (Uses Custom Emerald Green) */}
+          {/* Feature 3: Verified Collectors (Uses Custom Emerald) */}
           <ShineCard className="bg-secondary/50">
-            <div className="h-12 w-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-6 text-emerald-500">
+            <div className="h-12 w-12 rounded-full bg-icon-emerald/10 flex items-center justify-center mb-6 text-icon-emerald">
               <ShieldCheck className="w-6 h-6" />
             </div>
             <TypographyH3>Verified Collectors</TypographyH3>
@@ -73,7 +73,7 @@ const SolutionSection: React.FC = () => {
 
           {/* Feature 4: Local Repair Network (Uses Custom Amber) */}
           <ShineCard className="bg-secondary/50">
-            <div className="h-12 w-12 rounded-full bg-amber-500/10 flex items-center justify-center mb-6 text-amber-500">
+            <div className="h-12 w-12 rounded-full bg-icon-amber/10 flex items-center justify-center mb-6 text-icon-amber">
               <Wrench className="w-6 h-6" />
             </div>
             <TypographyH3>Repair & Upcycle</TypographyH3>
@@ -87,7 +87,7 @@ const SolutionSection: React.FC = () => {
 
           {/* Feature 5: Real-Time Tracking (Uses Custom Blue) */}
           <ShineCard className="bg-secondary/50">
-            <div className="h-12 w-12 rounded-full bg-blue-500/10 flex items-center justify-center mb-6 text-blue-500">
+            <div className="h-12 w-12 rounded-full bg-icon-blue/10 flex items-center justify-center mb-6 text-icon-blue">
               <Activity className="w-6 h-6" />
             </div>
             <TypographyH3>Real-Time Tracking</TypographyH3>
