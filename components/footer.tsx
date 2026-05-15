@@ -1,3 +1,5 @@
+import { TypographyMuted, TypographyP } from "./ui/typography";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -8,12 +10,10 @@ export function Footer() {
       <div className="container mx-auto max-w-screen-2xl px-4 py-8 md:px-8 md:py-10">
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <div className="space-y-1 text-center sm:text-left">
-            <p className="text-sm font-semibold tracking-wide text-foreground">
-              E-Wise
-            </p>
-            <p className="text-xs text-muted-foreground">
+            <TypographyP>E-Wise</TypographyP>
+            <TypographyMuted>
               Circular intelligence for cleaner cities.
-            </p>
+            </TypographyMuted>
           </div>
 
           <nav className="flex items-center gap-5 text-xs text-muted-foreground">
@@ -29,9 +29,7 @@ export function Footer() {
           </nav>
         </div>
 
-        <p className="mt-6 text-center text-xs text-muted-foreground sm:text-left">
-          © {year} E-Wise. All rights reserved.
-        </p>
+        <TypographyMuted>© {year} E-Wise. All rights reserved.</TypographyMuted>
       </div>
     </footer>
   );
