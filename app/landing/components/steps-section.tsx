@@ -24,13 +24,10 @@ const StepsSection: React.FC = () => {
 
         {/* Steps Grid container */}
         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-          {/* Connecting Line (Desktop Only) */}
-          {/* This line sits exactly behind the center of the icons to create a timeline effect */}
           <div className="hidden md:block absolute top-12 left-[16.5%] right-[16.5%] h-[2px] bg-border/80 z-0"></div>
 
           {/* Step 1: AI Analysis (Uses Custom Purple for Tech/AI) */}
           <div className="relative z-10 flex flex-col items-center text-center">
-            {/* The solid bg-background blocks the line, while the inner div adds the transparent color tint */}
             <div className="relative h-24 w-24 rounded-full bg-background shadow-sm flex items-center justify-center mb-8 transition-transform duration-300 hover:scale-110">
               <div className="absolute inset-0 rounded-full bg-icon-purple/10"></div>
               <ScanLine className="relative z-10 w-10 h-10 text-icon-purple" />
