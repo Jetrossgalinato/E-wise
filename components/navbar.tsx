@@ -1,6 +1,11 @@
+//components
 import { ModeToggle } from "./mode-toggle";
-import Image from "next/image";
 import { TypographyH4 } from "./ui/typography";
+import { Button } from "./ui/button";
+
+//next
+import Image from "next/image";
+import Link from "next/link";
 
 export function Navbar() {
   return (
@@ -43,6 +48,11 @@ export function Navbar() {
 
           <div className="flex items-center">
             <ModeToggle />
+            <Link href="/login">
+              <Button size="sm" className="ml-4">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
