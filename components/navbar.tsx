@@ -24,24 +24,24 @@ export function Navbar() {
 
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <a
-              href="#"
+            <Link
+              href="/"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
-              Features
-            </a>
-            <a
-              href="#"
+              Home
+            </Link>
+            <Link
+              href="#/pricing"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
               Pricing
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="#/about"
               className="transition-colors hover:text-foreground/80 text-foreground/60"
             >
               About
-            </a>
+            </Link>
           </nav>
 
           <div className="h-4 w-[1px] bg-border mx-2 hidden md:block" />
@@ -49,7 +49,7 @@ export function Navbar() {
           <div className="flex items-center">
             <ModeToggle />
             <Link href="/login">
-              <Button size="sm" className="ml-4">
+              <Button size="md" className="ml-4">
                 Get Started
               </Button>
             </Link>
