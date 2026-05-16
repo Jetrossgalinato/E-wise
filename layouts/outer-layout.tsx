@@ -17,14 +17,14 @@ export default function OuterLayout({
     <div
       className={cn(
         "flex min-h-screen flex-col",
-        isAuthRoute && "h-svh overflow-hidden [&>footer]:mt-0",
+        isAuthRoute && "h-svh overflow-hidden",
       )}
     >
       <Navbar />
       <main className={cn("flex-1", isAuthRoute && "min-h-0 overflow-hidden")}>
         {children}
       </main>
-      <Footer />
+      {!isAuthRoute && <Footer />}
     </div>
   );
 }

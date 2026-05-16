@@ -1,6 +1,8 @@
+//utils
 import { GalleryVerticalEnd } from "lucide-react";
-
 import { cn } from "@/lib/utils";
+
+//components
 import { Button } from "@/components/ui/button";
 import {
   Field,
@@ -10,6 +12,7 @@ import {
   FieldSeparator,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { PasswordField } from "@/components/password-field";
 
 export function SignupForm({
   className,
@@ -35,6 +38,10 @@ export function SignupForm({
             </FieldDescription>
           </div>
           <Field>
+            <FieldLabel htmlFor="username">Username</FieldLabel>
+            <Input id="username" type="text" required />
+          </Field>
+          <Field>
             <FieldLabel htmlFor="email">Email</FieldLabel>
             <Input
               id="email"
@@ -43,6 +50,8 @@ export function SignupForm({
               required
             />
           </Field>
+          <PasswordField id="password" label="Password" />
+          <PasswordField id="confirm-password" label="Confirm Password" />
           <Field>
             <Button type="submit">Create Account</Button>
           </Field>
