@@ -12,6 +12,7 @@ import {
   FieldSeparator,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { PasswordField } from "@/components/password-field";
 
 export function LoginForm({
   className,
@@ -45,6 +46,7 @@ export function LoginForm({
               required
             />
           </Field>
+          <PasswordField id="password" label="Password" />
           <Field>
             <Button type="submit">Login</Button>
           </Field>
