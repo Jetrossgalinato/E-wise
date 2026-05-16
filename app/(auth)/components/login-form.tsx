@@ -1,6 +1,8 @@
+//utils
 import { GalleryVerticalEnd } from "lucide-react";
-
 import { cn } from "@/lib/utils";
+
+//components
 import { Button } from "@/components/ui/button";
 import {
   Field,
