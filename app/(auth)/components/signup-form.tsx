@@ -1,5 +1,5 @@
 //utils
-import { GalleryVerticalEnd } from "lucide-react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 //components
@@ -27,12 +27,17 @@ export function SignupForm({
               href="#"
               className="flex flex-col items-center gap-2 font-medium"
             >
-              <div className="flex size-8 items-center justify-center rounded-md">
-                <GalleryVerticalEnd className="size-6" />
+              <div className="flex size-10 items-center justify-center ">
+                <Image
+                  src="/icon.png"
+                  alt="E-Wise logo"
+                  width={48}
+                  height={48}
+                />
               </div>
-              <span className="sr-only">Acme Inc.</span>
+              <span className="sr-only">E-Wise</span>
             </a>
-            <h1 className="text-xl font-bold">Welcome to Acme Inc.</h1>
+            <h1 className="text-xl font-bold">Welcome to E-Wise</h1>
             <FieldDescription>
               Already have an account? <a href="/login">Sign in</a>
             </FieldDescription>
